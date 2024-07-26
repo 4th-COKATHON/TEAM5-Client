@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 import { IoMdPerson } from 'react-icons/io';
@@ -11,6 +12,8 @@ import Icecream from '../../assets/img/icecream.svg?react';
 import Arrow from '../../assets/img/arrow.svg?react';
 
 const FriendList = () => {
+  const nav = useNavigate();
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState('');
 
@@ -37,7 +40,7 @@ const FriendList = () => {
           </div>
           <div className="listScroll">
             {friends.map((friend, index) => (
-              <div key={index} className="friList">
+              <div key={index} className="friList" onClick={()=>nav(`${friend}`)}>
                 <div className="profile" style={{ backgroundColor: colors[index % 5] }}>
                   <IoMdPerson size={18} />
                 </div>
