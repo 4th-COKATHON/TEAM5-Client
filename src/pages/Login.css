@@ -3,6 +3,7 @@
   color: white;
   max-width: 1400px;
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
 }
 
@@ -50,6 +51,7 @@
   height: 40px;
   margin-bottom: 2%;
   padding-left: 3%;
+  color: #FFFFFF;
 }
 
 .login-button {
@@ -58,6 +60,7 @@
   background-color: #FFFFFF;
   height: 40px;
   margin-top: 1%;
+  cursor: pointer;
 }
 
 .login-kakao-text {
@@ -92,6 +95,7 @@
 
 .kakao-login-container {
   width: 100%;
+  cursor: pointer;
 }
 
 .kakaoLogin-image {
