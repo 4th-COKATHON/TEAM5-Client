@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { IoMdPerson } from 'react-icons/io';
 import { CiFaceSmile } from 'react-icons/ci';
@@ -10,6 +11,8 @@ import Icecream from '../assets/img/icecream.svg?react';
 import Arrow from '../assets/img/arrow.svg?react';
 
 const FriendList = () => {
+  const nav = useNavigate();
+
   const friends = ['김나연', '감자감자', '포테이토', '눈을감자', '감자에싹이나서', '자감', '5조', '최고'];
   const colors = ['#03c75a', '#c73203', '#0375c7', '#c7039c', '#e1d800'];
   return (
@@ -22,7 +25,7 @@ const FriendList = () => {
           </div>
           <div className="listScroll">
             {friends.map((friend, index) => (
-              <div key={index} className="friList">
+              <div key={index} className="friList" onClick={()=>nav(`${friend}`)}>
                 <div className="profile" style={{ backgroundColor: colors[index % 5] }}>
                   <IoMdPerson size={18} />
                 </div>

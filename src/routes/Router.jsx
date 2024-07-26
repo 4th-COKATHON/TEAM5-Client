@@ -18,6 +18,9 @@ const Router = () => {
     {
       path: '/bucket',
       element: <Bucket />,
+			children: [
+				{ path: ':name', element: <Bucket />}
+			]
     }
 	];
 

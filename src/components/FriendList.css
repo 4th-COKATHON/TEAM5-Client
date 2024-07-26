@@ -41,6 +41,8 @@
   font-size: 14px;
   width: 200px;
   max-height: 80px;
+
+  cursor: pointer;
 }
 
 .listScroll {
