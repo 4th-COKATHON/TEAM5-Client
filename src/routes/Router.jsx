@@ -1,12 +1,17 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // import Home from '../pages/Home';
 import Login from '../pages/Login';
+import KakaoRedirect from '../api/KakaoRedirect';
 
 const Router = () => {
 	const routes = [
 		{
 			path: '/',
 			element: <Login />, // 메인홈 (로그인)
+		},
+		{
+			path: '/oauth',
+			element: <KakaoRedirect />, // 메인홈 (로그인)
 		}
 	];
 

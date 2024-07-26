@@ -1,9 +1,22 @@
 import './Login.css';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import LoginHeader from '../components/LoginHeader';
-
 import kakaoLogin from '../assets/img/kakao_login_medium_wide.png';
 
 const Login = () => {
+  const nav = useNavigate();
+	const [email, setEmail] = useState('');
+	const [pw, setPw] = useState('');
+
+  const KAKAO_REST_API = import.meta.env.VITE_APP_KAKAO_REST_API;
+  const KAKAO_REDIRECT_URI = `http://localhost:5173/oauth`;
+  const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${KAKAO_REST_API}&redirect_uri=${KAKAO_REDIRECT_URI}&response_type=code`;
+
+  const handleKakaoLogin = () => {
+    window.location.href = kakaoURL; //kakaoURL로 이동
+  }
+
   return (
     <div className='login-page'>
       <div className='login-header-container'>
@@ -18,12 +31,12 @@ const Login = () => {
           </div>
           <div className='login-content-container'>
             <div className='login-content'>
-              <input className='login-input' placeholder='이메일(example@gmail.com'></input>
-              <input className='login-input' placeholder='비밀번호'></input>
-              <button className='login-button'>로그인</button>
+              <input className='login-input' placeholder='이메일(example@gmail.com' onChange={(e) => {setEmail(e.target.value);}} ></input>
+              <input className='login-input' placeholder='비밀번호' onChange={(e) => {setPw(e.target.value);}}></input>
+              <button className='login-button' onClick={()=>nav('./bucket')} >로그인</button>
               <div className='login-kakao-text'>또는 카카오로 로그인</div>
               <div className='kakao-login-container'>
-                <img alt="kakaoLogin" className='kakaoLogin-image' src={kakaoLogin} />
+                <img alt="kakaoLogin" className='kakaoLogin-image' src={kakaoLogin} onClick={handleKakaoLogin} />
               </div>
             </div>
           </div>
