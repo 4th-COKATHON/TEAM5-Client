@@ -8,10 +8,10 @@ const Login = () => {
 
   const KAKAO_REST_API = import.meta.env.VITE_APP_KAKAO_REST_API;
   const KAKAO_REDIRECT_URI = `http://localhost:5173/oauth`;
-  const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${KAKAO_REST_API}&redirect_uri=${KAKAO_REDIRECT_URI}&response_type=code`;
+  // const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${KAKAO_REST_API}&redirect_uri=${KAKAO_REDIRECT_URI}&response_type=code`;
 
   const handleKakaoLogin = () => {
-    window.location.href = kakaoURL; //kakaoURL로 이동
+    window.location.href = `http://ec2-43-203-201-112.ap-northeast-2.compute.amazonaws.com:8001/auth/kakao`; //kakaoURL로 이동
   }
 
   return (
