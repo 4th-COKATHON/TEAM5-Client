@@ -1,0 +1,17 @@
+.login-header {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+  margin-bottom: 20px;
+}
+
+.header-signup-button {
+  border: 1px solid #CBCBCB;
+  border-radius: 4px;
+  color: #CBCBCB;
+  background-color: black;
+  width: 78px;
+  height: 32px;
+  font-size: 13px;
+  margin-top: 20px;
+}
