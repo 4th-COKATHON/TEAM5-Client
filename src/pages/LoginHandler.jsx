@@ -5,7 +5,7 @@ import axios from "axios";
 const LoginHandler = () => {
   const navigate = useNavigate();
 
-  window.location.href = `http://ec2-43-203-201-112.ap-northeast-2.compute.amazonaws.com:8001/auth/kakao/callback`;
+  window.location.href = `http://ec2-13-125-73-116.ap-northeast-2.compute.amazonaws.com:8001/auth/kakao/callback`;
   const code = new URL(window.location.href).searchParams.get("code");
 
    //인가코드 백으로 보내는 코드
@@ -30,6 +30,7 @@ const LoginHandler = () => {
     };
     kakaoLogin();
   });
+
 
   return (
     <div className="LoginHandeler">
