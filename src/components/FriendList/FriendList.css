@@ -87,4 +87,9 @@
 
 .settingColumn p {
   margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.settingColumn p:hover {
+  font-weight: bold;
 }
