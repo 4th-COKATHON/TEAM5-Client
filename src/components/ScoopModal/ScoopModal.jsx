@@ -6,6 +6,9 @@ import { useState } from 'react';
 
 const ScoopModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
+  const handleClick = () => {
+    onClose();
+  };
 
   return (
     <div className="modalOverlay">
@@ -35,7 +38,7 @@ const ScoopModal = ({ isOpen, onClose }) => {
               className="todo"
               placeholder="당신의 청춘, 무엇이든 하고 싶은 일을 입력하세요"
             />
-            <button type="button" className="addScoop">
+            <button type="button" className="addScoop" onClick={handleClick}>
               스쿱 생성
             </button>
           </div>

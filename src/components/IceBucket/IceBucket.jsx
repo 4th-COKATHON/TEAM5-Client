@@ -5,9 +5,15 @@ import IceBucketHeader from '../IceBucketHeader';
 import { useState } from 'react';
 
 import Icecone from '../../assets/img/Icream/cone.svg?react';
+import Icecone1 from '../../assets/img/Icream/cone1.svg?react';
 
 const IceBucket = () => {
+  const [isClick, setIsClick] = useState(false);
   const params = useParams();
+
+  const handleClick = () => {
+    setIsClick(!isClick);
+  };
 
   return (
     <div className="IceContainer">
@@ -17,7 +23,12 @@ const IceBucket = () => {
           <IceBucketHeader userInfo={params.name} />
         </div>
         <div className="bucket-content-container">
-          <img className='cone' src={Icecone} alt="cone" />
+          <button onClick={handleClick}>!</button>
+          {isClick ? (
+            <img className="cone" src={Icecone} alt="cone" />
+          ) : (
+            <img className="cone1" src={Icecone1} alt="cone1" />
+          )}
         </div>
       </div>
     </div>
