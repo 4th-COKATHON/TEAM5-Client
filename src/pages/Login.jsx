@@ -6,8 +6,6 @@ import kakaoLogin from '../assets/img/kakao_login_medium_wide.png';
 const Login = () => {
   const nav = useNavigate();
 
-  const KAKAO_REST_API = import.meta.env.VITE_APP_KAKAO_REST_API;
-  const KAKAO_REDIRECT_URI = `http://localhost:5173/oauth`;
   // const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${KAKAO_REST_API}&redirect_uri=${KAKAO_REDIRECT_URI}&response_type=code`;
 
   const handleKakaoLogin = () => {
