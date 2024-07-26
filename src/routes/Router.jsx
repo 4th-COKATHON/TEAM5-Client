@@ -10,8 +10,8 @@ const Router = () => {
       element: <Home />, // 메인홈
     },
     {
-      path: '/',
-      element: <Bucket />, // 메인홈
+      path: '/bucket',
+      element: <Bucket />,
     },
   ];
 
