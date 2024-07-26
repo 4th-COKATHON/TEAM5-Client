@@ -1,9 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-// import Home from '../pages/Home';
+
+import Bucket from '../pages/Bucket';
 import Login from '../pages/Login';
 import KakaoRedirect from '../api/KakaoRedirect';
 
 const Router = () => {
+
 	const routes = [
 		{
 			path: '/',
@@ -12,10 +14,14 @@ const Router = () => {
 		{
 			path: '/oauth',
 			element: <KakaoRedirect />, // 메인홈 (로그인)
-		}
+		},
+    {
+      path: '/bucket',
+      element: <Bucket />,
+    }
 	];
 
-	const router = createBrowserRouter([...routes]);
+  const router = createBrowserRouter([...routes]);
 
 	return <RouterProvider router={router} />;
 };
