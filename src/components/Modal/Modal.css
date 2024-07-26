@@ -66,7 +66,6 @@
   padding-right: 10px; /* 스크롤바와 콘텐츠 간의 간격 */
   scrollbar-width: thin; /* Firefox에서 스크롤바 두께 조정 */
   scrollbar-color: #191919;
-  border-radius: 30px;
 }
 
 /* 웹킷 기반 브라우저 (Chrome, Safari)에서 스크롤바 스타일 설정 */
