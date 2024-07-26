@@ -25,7 +25,9 @@ const LoginHandler = () => {
         localStorage.setItem("name", res.data.account.kakaoName);
         //로그인이 성공하면 이동할 페이지
         navigate("/bucket");
-      });
+      }).catch((error)=>{
+        console.log(error);
+      })
     };
     kakaoLogin();
   });
