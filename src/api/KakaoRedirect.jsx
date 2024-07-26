@@ -19,7 +19,7 @@ export function KakaoRedirect() {
         console.log(data.result.jwt);
       })
       .catch((error) => {
-        console.error("오류 발생", error); //
+        console.error("오류 발생", error);
       });
   }, []);
 
