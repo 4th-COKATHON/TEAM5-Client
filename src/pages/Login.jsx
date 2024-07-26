@@ -1,7 +1,7 @@
 import './Login.css';
 import LoginHeader from '../components/LoginHeader';
 
-import kakaoLogin from '../../dist/assets/images/kakao_login_medium_wide.png';
+import kakaoLogin from '../assets/img/kakao_login_medium_wide.png';
 
 const Login = () => {
   return (
@@ -14,7 +14,7 @@ const Login = () => {
           <div className='login-title'>
             <p className='login-title-p'>땀흘리는 나의 청춘, 우리가 이루어내는 결실</p>
             <h1 className='login-title-h1'>함께하는 버킷리스트,</h1>
-            <h1 className='login-title-h1'>"서비스명"</h1>
+            <h1 className='login-title-h1'>서비스명</h1>
           </div>
           <div className='login-content-container'>
             <div className='login-content'>
