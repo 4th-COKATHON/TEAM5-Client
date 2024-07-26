@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from '../pages/home';
+import Home from '../pages/Home';
 
 // 부모 컴포넌트로부터 로그인 여부에 대한 값 받아와서 사용
 const Router = () => {
