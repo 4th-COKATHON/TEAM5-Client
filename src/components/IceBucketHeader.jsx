@@ -1,14 +1,27 @@
-import { BsPlusCircle } from "react-icons/bs";
-import { FaRegTrashAlt } from "react-icons/fa";
-import { FaRegPenToSquare } from "react-icons/fa6";
+import { BsPlusCircle } from 'react-icons/bs';
+import { FaRegTrashAlt } from 'react-icons/fa';
+import { FaRegPenToSquare } from 'react-icons/fa6';
 
-const IceBucketHeader = ({userInfo}) => {
+import SModal from './ScoopModal/ScoopModal';
+import { useState } from 'react';
+
+const IceBucketHeader = ({ userInfo }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = (content) => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="header-informaiton-container">
       <div className="header-information">
         <div className="left-button-container">
           <div className="left-button plus-button">
-            <BsPlusCircle className="button-image" />
+            <BsPlusCircle className="button-image" onClick={handleOpenModal} />
             <p>스쿱추가</p>
           </div>
           <div className="left-button trash-button">
@@ -24,6 +37,7 @@ const IceBucketHeader = ({userInfo}) => {
           </div>
         </div>
       </div>
+      <SModal isOpen={isModalOpen} onClose={handleCloseModal} />
     </div>
   );
 };

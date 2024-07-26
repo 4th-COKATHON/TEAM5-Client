@@ -18,7 +18,7 @@
   display: flex;
   padding-left: 4%;
   padding-right: 4%;
-  margin-top: 0 auto;
+  margin: 0 auto;
 }
 
 .login-title-p {
@@ -53,19 +53,19 @@
 }
 
 .login-input {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   border-radius: 8px;
   background-color: #191919;
   height: 40px;
   margin-bottom: 2%;
   padding-left: 3%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .login-button {
   border: none;
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 40px;
   margin-top: 1%;
   cursor: pointer;
@@ -75,27 +75,27 @@
   display: flex;
   flex-basis: center;
   align-items: center;
-  color: #81838B;
+  color: #81838b;
   font-size: 11px;
   margin: 8px 0px;
   margin-top: 10%;
 }
 
 .login-kakao-text::before {
-  content:"";
-  flex-grow:1;
+  content: '';
+  flex-grow: 1;
   margin-right: 5%;
-  background: #81838B;
+  background: #81838b;
   height: 1px;
   font-size: 0px;
   line-height: 0px;
 }
 
 .login-kakao-text::after {
-  content:"";
-  flex-grow:1;
+  content: '';
+  flex-grow: 1;
   margin-left: 5%;
-  background: #81838B;
+  background: #81838b;
   height: 1px;
   font-size: 0px;
   line-height: 0px;
@@ -113,65 +113,5 @@
 
 .login-right-container {
   width: 35%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.login-scoop-circle {
-  width : 40%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  position: absolute;
-  margin: 0;
-}
-
-.login-scoop-circle-red {
-  background-color: #F12929;
-  top: 0%;
-  z-index: 4;
-}
-
-.login-scoop-circle-orange {
-  background-color: #F1A129;
-  top: 23%;
-  z-index: 3;
-}
-
-.login-scoop-circle-green {
-  background-color: #7DAA87;
-  top: 46%;
-  z-index: 2;
-}
-
-.login-scoop-circle-yellow {
-  background-color: #EDF129;
-  top: 69%;
-  z-index: 1;
-}
-
-.red-circle-dots {
-  position: absolute;
-  top: 40%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-}
-
-.red-circle-dots::before, .red-circle-dots::after {
-  content: '';
-  width: 8px;
-  height: 8px;
-  background-color: black;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.red-circle-dots::before {
-  left: -20px;
-}
-
-.red-circle-dots::after {
-  right: -10px;
+  bottom: 0;
 }

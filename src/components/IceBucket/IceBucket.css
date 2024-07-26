@@ -1,109 +1,118 @@
-.IceContainer{
-    width: 65%;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+.IceContainer {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .bucket-container {
-    margin-top: 0px;
-    margin-right: 15%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  margin-top: 0px;
+  margin-right: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .bucket-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .header-logout-button {
-    border: 1px solid #CBCBCB;
-    border-radius: 4px;
-    color: #CBCBCB;
-    background-color: black;
-    width: 78px;
-    height: 32px;
-    font-size: 13px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 5%;
-    cursor: pointer;
+  border: 1px solid #cbcbcb;
+  border-radius: 4px;
+  color: #cbcbcb;
+  background-color: black;
+  width: 78px;
+  height: 32px;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 5%;
+  cursor: pointer;
 }
 
 .header-informaiton-container {
-    width: 100%;
-    margin-bottom: 2%;
+  width: 100%;
+  margin-bottom: 2%;
 }
 
 .bucket-content-container {
-    border: 1px solid lightcoral;
-    max-height: 100%;
-    flex: 1;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+}
+.cone {
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .header-information {
-    display: flex;
-    align-items: center;
-    font-size: 28px;
+  display: flex;
+  align-items: center;
+  font-size: 28px;
 }
 
 .left-button-container {
-    width: 20%;
-    display: flex;
-    margin-right: 10%;
-    padding-left: 5%;
+  width: 20%;
+  display: flex;
+  margin-right: 10%;
+  padding-left: 5%;
 }
 
 .left-button-container p {
-    font-size: 8px;
-    display: flex;
-    margin-top: 5%;
-    cursor: pointer;
+  font-size: 8px;
+  display: flex;
+  margin-top: 5%;
+  cursor: pointer;
 }
 
 .left-button {
-    flex: 1;
-    margin: 0% 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 5%;
+  flex: 1;
+  margin: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5%;
 }
 
 .user-name {
-    width: 60%;
-    text-align: center;
+  width: 60%;
+  text-align: center;
 }
 
 .right-button-container {
-    width: 20%;
-    display: flex;
-    justify-content: end;
-    text-align: end;
-    margin-left: 10%;
-    padding-right: 5%;
+  width: 20%;
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  margin-left: 10%;
+  padding-right: 5%;
 }
 
 .right-button-container p {
-    font-size: 8px;
-    display: flex;
-    text-align: end;
-    margin-top: 5%;
+  font-size: 8px;
+  display: flex;
+  text-align: end;
+  margin-top: 5%;
 }
 
 .right-button {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
 
 .button-image {
-    cursor: pointer;
+  cursor: pointer;
 }

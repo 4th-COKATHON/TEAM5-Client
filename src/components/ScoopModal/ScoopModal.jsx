@@ -4,24 +4,13 @@ import './ScoopModal.css';
 import Banner from '../../assets/img/MaskGroup.svg';
 import { useState } from 'react';
 
-const ScoopModal = () => {
-  // { isOpen, onClose }
-  const [selectedData, setSelectedData] = useState(null);
-
-  //   if (!isOpen) return null;
-
-  const handleDetail = (data) => {
-    setIsDetailClick(true);
-    setSelectedData(data);
-  };
+const ScoopModal = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
 
   return (
     <div className="modalOverlay">
       <div className="modalContainer">
-        <button
-          className="modalClose"
-          //   onClick={onClose}
-        >
+        <button className="modalClose" onClick={onClose}>
           x
         </button>
         <div className="modalContent">
