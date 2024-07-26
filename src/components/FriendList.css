@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 35%;
+  height: 100vh;
+  background-color: #191919;
+  border-right: 2px solid #333333;
+}
+
+.friendContainer {
+  width: 100%;
+  height: 70%;
+  border-bottom: 2px solid #333333;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  top: 0;
+}
+.friContainer {
+  height: 100%;
+}
+
+.listTitle {
+  margin-top: 8vh;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.friList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* border: 1px solid white; */
+  padding: 0.3rem 0;
+  font-size: 14px;
+  width: 200px;
+  max-height: 80px;
+}
+
+.listScroll {
+  paddint-top: 0;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 350px;
+}
+.listScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #03c75a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.settingContainer {
+  flex: 1;
+  /* border: 1px solid red; */
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin: 0 auto;
+}
+.settingColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 35%;
+  margin-top: 30px;
+}
+
+.settingColumn p {
+  margin-bottom: 30px;
+}

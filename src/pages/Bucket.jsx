@@ -1,17 +1,14 @@
 // import React from 'react'
-import { IoMdPerson } from "react-icons/io";
 
 import './Bucket.css'
+import FriendList from "../components/FriendList";
+import IceBucket from '../components/IceBucket';
 
 const bucket = () => {
   return (
     <div className='bucketContainer'>
-        <div className='friendContainer'>
-            <IoMdPerson />
-        </div>
-        <div className='iceContainer'>
-
-        </div>
+        <FriendList />
+        <IceBucket />
     </div>
   )
 }
