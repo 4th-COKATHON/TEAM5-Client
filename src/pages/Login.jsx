@@ -33,7 +33,7 @@ const Login = () => {
             <div className='login-content'>
               <input className='login-input' placeholder='이메일(example@gmail.com' onChange={(e) => {setEmail(e.target.value);}} ></input>
               <input className='login-input' placeholder='비밀번호' onChange={(e) => {setPw(e.target.value);}}></input>
-              <button className='login-button' onClick={()=>nav('./bucket')} >로그인</button>
+              <button className='login-button' onClick={() => nav('/bucket')} >로그인</button>
               <div className='login-kakao-text'>또는 카카오로 로그인</div>
               <div className='kakao-login-container'>
                 <img alt="kakaoLogin" className='kakaoLogin-image' src={kakaoLogin} onClick={handleKakaoLogin} />
