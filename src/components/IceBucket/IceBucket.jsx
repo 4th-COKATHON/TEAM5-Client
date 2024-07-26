@@ -2,7 +2,7 @@
 import "./IceBucket.css";
 import { useParams } from "react-router-dom";
 
-import IceBucketHeader from "./IceBucketHeader";
+import IceBucketHeader from "../IceBucketHeader";
 
 const IceBucket = () => {
   const params = useParams();
