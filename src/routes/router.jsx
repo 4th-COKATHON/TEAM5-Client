@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ProtectedRoute from '../components/ProtectedRoutes';
 import Home from '../pages/home';
 
 // 부모 컴포넌트로부터 로그인 여부에 대한 값 받아와서 사용
