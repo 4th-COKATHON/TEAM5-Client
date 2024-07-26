@@ -16,6 +16,10 @@ const IceBucketHeader = ({ userInfo }) => {
     setIsModalOpen(false);
   };
 
+  const handlealert = () => {
+    alert('진짜 삭제할까요?');
+  };
+
   return (
     <div className="header-informaiton-container">
       <div className="header-information">
@@ -25,7 +29,7 @@ const IceBucketHeader = ({ userInfo }) => {
             <p>스쿱추가</p>
           </div>
           <div className="left-button trash-button">
-            <FaRegTrashAlt className="button-image" />
+            <FaRegTrashAlt className="button-image" onClick={handlealert} />
             <p>스쿱삭제</p>
           </div>
         </div>

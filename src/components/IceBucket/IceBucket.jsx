@@ -8,7 +8,7 @@ import Icecone from '../../assets/img/Icream/cone.svg?react';
 import Icecone1 from '../../assets/img/Icream/cone1.svg?react';
 
 const IceBucket = () => {
-  const [isClick, setIsClick] = useState(false);
+  const [isClick, setIsClick] = useState();
   const params = useParams();
 
   const handleClick = () => {
@@ -25,9 +25,9 @@ const IceBucket = () => {
         <div className="bucket-content-container">
           <button onClick={handleClick}>!</button>
           {isClick ? (
-            <img className="cone" src={Icecone} alt="cone" />
-          ) : (
             <img className="cone1" src={Icecone1} alt="cone1" />
+          ) : (
+            <img className="cone" src={Icecone} alt="cone" />
           )}
         </div>
       </div>
