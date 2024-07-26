@@ -6,7 +6,7 @@ import { IoIosNotificationsOutline } from 'react-icons/io';
 import { HiOutlineUsers } from 'react-icons/hi2';
 
 import './FriendList.css';
-import Modal from '../Modal/Modal';
+import Modal from '../Modal/Modal'
 import Icecream from '../../assets/img/icecream.svg?react';
 import Arrow from '../../assets/img/arrow.svg?react';
 
